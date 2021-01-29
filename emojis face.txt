@@ -1,0 +1,3 @@
+Sad face : <span style='font-size:100px;'>&#128532;</span>
+Happy Face : <span style='font-size:100px;'>&#128512;</span>
+Emotionless face : <span style='font-size:100px;'>&#128528;</span>

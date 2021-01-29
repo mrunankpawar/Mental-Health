@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    /* margin-left: 20px; */
+    margin-left: 0px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 20px;
+    color: #fff;
+}
+
+.banner-area {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(cloud\ bg.jfif);
+    background-size: 100%;
+    overflow: auto;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+.banner-area h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.banner-area h3 {
+    padding-top: 2%;
+    font-size: 25px;
+    color: black;
+}
+
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 600px;
+    background: url(blur.jpg);
+    background-size: cover;
+    /* background-size: 100%; */
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1500px;
+}
+
+.content-area h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.content-area p {
+    padding: 2% 0;
+    font-family: merienda;
+}
+
+
+/* ============================================================================================= */
+
+body,
+.bg-image {
+    padding-top: 0px;
+    background-image: url("blur.jpg");
+    /* background-image: url("cloud\ bg.jfif"); */
+    /* background-image: url("tree.jpg"); */
+    background-position: center center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ====================================================================================================================== */
+
+.containerb {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.containerb .boxb {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #90e0ef;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.containerb .boxb .iconb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00b4d8;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.containerb .boxb:hover .iconb {
+    top: 20px;
+    Left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.containerb .boxb .iconb .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #ffd6ff;
+}
+
+.containerb .boxb .contentb {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    left: 90px;
+    height: calc(100% - 100px);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.containerb .boxb .contentb p {
+    text-align: center;
+    line-height: 25px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+
+/* ====================================================================================================================== */
+
+.container {
+    max-width: 800px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+/* .tab_triger{} */
+
+.tab_triger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+/* .tab_triger ul li{} */
+
+.tab_triger ul li label {
+    position: relative;
+    display: block;
+    padding: 8px 15px;
+    cursor: pointer;
+    min-width: 100px;
+    background: #e6e6e6;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab_triger ul li:nth-child(1) label {
+    background: #fefae0;
+}
+
+.tab_triger ul li:nth-child(2) label {
+    background: #dda15e;
+}
+
+.tab_triger ul li:nth-child(3) label {
+    background: #bc6c25;
+}
+
+
+/* .tab_container_wrap{} */
+
+.tab_container_wrap input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    z-index: -100;
+    top: -10000px;
+}
+
+.tab_container_wrap input:checked+.tab_content_box {
+    display: block;
+}
+
+.tab_content_box {
+    background: #994545;
+    padding: 20px;
+    display: none;
+}
+
+.tab_content_box:nth-of-type(1) {
+    background: #fefae0;
+}
+
+.tab_content_box:nth-of-type(2) {
+    background: #dda15e;
+}
+
+.tab_content_box:nth-of-type(3) {
+    background: #bc6c25;
+}
+
+.tab_content_box h2 {
+    margin: 0 0 20px;
+}
